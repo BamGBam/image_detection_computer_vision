@@ -60,7 +60,8 @@ if amount_found != 0:
         cv2.rectangle(img_rgb, (x, y), 
                       (x + height, y + width), 
                       (0, 255, 0), 5)
-
+        cv2.putText(img_rgb, 'stop-sign', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+ 
 # Creates the environment of 
 # the picture and shows it
 plt.subplot(1, 1, 1)

@@ -39,7 +39,6 @@ def classification(img):
             cv2.rectangle(img_rgb, (x, y), 
                         (x + height, y + width), 
                         (0, 255, 0), 5)
-           
 # Creates the environment of 
 # the picture and shows it
     plt.subplot(1, 1, 1)
