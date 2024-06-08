@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
    
 # Opening image
 # img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/image.jpeg")
-img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/image_3.jpg")
+img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/image_6.jpg")
 
    
 # OpenCV opens images as BRG 
