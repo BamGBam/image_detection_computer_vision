@@ -13,6 +13,11 @@ sudo apt-get install -y libgtk2.0-dev pkg-config
 2. Install the Python package dependencies:
 pip install -r requirements.txt
 
+## Run the code
+cd to related folder you cloned
+python3 "src/classification-face-stop-sign-recognition.py"
+
+
 
 ## Results
 
