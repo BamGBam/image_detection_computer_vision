@@ -59,7 +59,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 # Reading the image 
-img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/raw-data/image_4.jpg")
+img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/raw-data/image_6.jpg")
 
 # Converting image to grayscale 
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

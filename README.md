@@ -17,8 +17,13 @@ pip install -r requirements.txt
 ## Results
 
 ## Before:
-![Alt text](proj1_classification/raw-data/image_4.jpg)
-![alt text](image.png)
+<!-- ![alt text](image.png) -->
+![alt text](raw-data/image_4.jpg)
+![alt text](raw-data/image_6.jpg)
+
+
 
 ## After:
-![alt text](image.png)
+<!-- ![alt text](image.png) -->
+![alt text](raw-data/out-put.png)
+![alt text](raw-data/out-put-1.png)
