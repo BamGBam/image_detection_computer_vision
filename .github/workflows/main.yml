@@ -26,5 +26,5 @@ jobs:
       - name: run classification-face-stop-sign-recognition.py
         run: |
           sudo apt-get install -y libgtk2.0-dev pkg-config
-          pip install opencv-python
+          pip install opencv-python matplotlib
           python3 "src/classification-face-stop-sign-recognition.py"
