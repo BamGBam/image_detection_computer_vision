@@ -16,14 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks out repository under $GITHUB_WORKSPACE, so job can access it
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: List files names
         run: |
           ls 
           pwd
 
-      - name: Run a multi-line script
+      - name: run classification-face-stop-sign-recognition.py
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          python3 "src/classification-face-stop-sign-recognition.py"
