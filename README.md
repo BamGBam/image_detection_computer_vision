@@ -9,9 +9,9 @@ This project entails:
 ## Installation Steps
 
 1. Install the system level packages:
-sudo apt-get install -y libgtk2.0-dev pkg-config
+`sudo apt-get install -y libgtk2.0-dev pkg-config`
 2. Install the Python package dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Run the code
 1- cd to related folder you cloned and run python
