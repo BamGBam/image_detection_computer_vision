@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ## Run the code
 1- cd to related folder you cloned and run python
-python3 "src/classification-face-stop-sign-recognition.py"
+`python3 "src/classification-face-stop-sign-recognition.py"`
 
 
 
