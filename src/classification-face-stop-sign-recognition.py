@@ -10,8 +10,8 @@ img = cv2.imread('raw-data/image_6.jpg')
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
   
 # Loading the required xml classifier files 
-face_cascade = cv2.CascadeClassifier('Haarcascade_frontalface_default.xml') 
-stop_cascade = cv2.CascadeClassifier('stop_data.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'Haarcascade_frontalface_default.xml') 
+stop_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'stop_data.xml')
 
 # Applying face detection method on the grayscale image 
 faces_rect = face_cascade.detectMultiScale(gray_img, 1.1, 9,) 
