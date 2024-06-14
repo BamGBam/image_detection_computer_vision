@@ -25,6 +25,5 @@ jobs:
       - name: run the classidication file
         run: |
           sudo apt-get install -y libgtk2.0-dev pkg-config
-          pip uninstall PyQt5
-          pip install opencv-python matplotlib
+          pip install opencv-python-headless
           python3 "src/classification-face-stop-sign-recognition.py"
