@@ -29,6 +29,10 @@ for (x, y, width, height) in stop_signs:
     cv2.rectangle(img, (x, y), (x + height, y + width), (0, 255, 0), 5)
     
 # Display image
-cv2.imshow('Detected Faces and Stop Signs', img) 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# Save image instead of displaying it
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.savefig('Detected_Faces_and_Stop_Signs.png')
+
+# cv2.imshow('Detected Faces and Stop Signs', img) 
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()

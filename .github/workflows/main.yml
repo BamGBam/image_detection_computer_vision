@@ -22,9 +22,8 @@ jobs:
         run: |
           ls 
           pwd
-      - name: run the classidication file
+      - name: run the classification file and see the result
         run: |
           sudo apt-get install -y libgtk2.0-dev pkg-config
-          pip3 install matplotlib
-          pip install opencv-python-headless
+          pip install matplotlib opencv-python-headless
           python3 "src/classification-face-stop-sign-recognition.py"
