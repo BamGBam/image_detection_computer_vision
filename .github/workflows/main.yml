@@ -26,4 +26,5 @@ jobs:
         run: |
           sudo apt-get install -y libgtk2.0-dev pkg-config
           pip install opencv-python matplotlib
+          sudo apt install libxcb-cursor0
           python3 "src/classification-face-stop-sign-recognition.py"
