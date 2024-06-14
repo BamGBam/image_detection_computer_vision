@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows running this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # Contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks out repository under $GITHUB_WORKSPACE, so job can access it
+      - uses: actions/checkout@v2
+
+      - name: List files names
+        run: |
+          ls 
+          pwd
+      - name: run the classidication file
+        run: |
+          sudo apt-get install -y libgtk2.0-dev pkg-config
+          pip install opencv-python matplotlib
+          python3 "src/classification-face-stop-sign-recognition.py"
