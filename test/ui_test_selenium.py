@@ -23,16 +23,19 @@ driver.implicitly_wait(0.5)
 # submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
 # 5. Find an element with explicit wait
 wait = WebDriverWait(driver, 10)  # wait for up to 10 seconds
-text_box = wait.until(EC.presence_of_element_located((By.NAME, 'my-text')))
-submit_button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'button')))
+
+# Replace `my-text` with the ID of the file input, which is `fileInput`
+file_input = wait.until(EC.presence_of_element_located((By.ID, 'fileInput')))
+# The button doesn't have a name or an id, in this case use tag name
+upload_button = wait.until(EC.presence_of_element_located((By.TAG_NAME, 'button')))
 
 # 6. Take action on element
-text_box.send_keys("Selenium")
-submit_button.click()
+# file_input.send_keys("<path_to_the_file_you_want_to_upload>")
+upload_button.click()
 
 #7. Request element information
-message = driver.find_element(by=By.ID, value="message")
-text = message.text
+result = driver.find_element(by=By.ID, value="result")
+text = result.text
 
 #8. End the session
 driver.quit()
