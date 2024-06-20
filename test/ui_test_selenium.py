@@ -36,7 +36,3 @@ text = message.text
 
 #8. End the session
 driver.quit()
-
-
-
-#####just to see changes
