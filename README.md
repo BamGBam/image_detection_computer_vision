@@ -30,3 +30,7 @@ This project entails:
 ## After:
 ![alt text](raw-data/out-put.png)
 ![alt text](raw-data/out-put-1.png)
+
+
+# Deployment to Streamlit
+<<>>
