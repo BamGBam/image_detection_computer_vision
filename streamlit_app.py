@@ -10,8 +10,9 @@ if uploaded_file is not None:
     st.write("filename:", uploaded_file.name)
     st.image(bytes_data)
 
-    
-    st.write("Output filename:", uploaded_file.name)
+    with open("Detected_Faces_and_Stop_Signs.png", "r") as output_file:
+        bytes_data = output_file.read()
+        st.image(bytes_data)
 
     
     
