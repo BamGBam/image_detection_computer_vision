@@ -10,9 +10,11 @@ if uploaded_file is not None:
     st.write("filename:", uploaded_file.name)
     st.image(bytes_data)
 
-    with open("Detected_Faces_and_Stop_Signs.png", "r") as output_file:
-        bytes_data = output_file.read()
-        st.image(bytes_data)
+    from src.classification_face_stop_sign_recognition import run_classification
+    
+    run_classification()
+
+    st.image("Detected_Faces_and_Stop_Signs.png")
 
     
     
