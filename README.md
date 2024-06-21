@@ -10,6 +10,7 @@ This project entails:
 
 1. Install the system level packages:
 `sudo apt-get install -y libgtk2.0-dev pkg-config`
+`sudo apt-get install ffmpeg libsm6 libxext6  -y`
 2. Install the Python package dependencies:
 `pip install -r requirements.txt`
 
