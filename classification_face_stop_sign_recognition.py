@@ -1,5 +1,6 @@
 import fire
 
+
 import cv2 
 from matplotlib import pyplot as plt
 
@@ -7,7 +8,7 @@ from matplotlib import pyplot as plt
 def run_classification(input_image_path: str ='raw-data/image_6.jpg', output_image_path: str ='Detected_Faces_and_Stop_Signs.png'):
     # Reading the image 
     # img = cv2.imread("/home/bgoshtasbi/Desktop/ML Project/proj1_classification/raw-data/image_6.jpg")
-    print("Running classification")
+    print(f"Running classification for: {input_image_path}")
     img = cv2.imread(input_image_path)
 
     # proj1_classification/src/Haarcascade_frontalface_default.xml
