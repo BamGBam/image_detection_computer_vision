@@ -1,1 +1,4 @@
-opencv-python==4.2.0.34
+opencv-python==4.10.0.84
+streamlit
+matplotlib
+fire==0.6.0
