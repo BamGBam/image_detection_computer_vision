@@ -14,9 +14,9 @@ if uploaded_file is not None:
     st.image(bytes_data)
     # Ensure the src directory is in the path
     
-    run_classification()
+    run_classification(input_image_path=uploaded_file.name, output_image_path=uploaded_file.name)
 
-    st.image("Detected_Faces_and_Stop_Signs.png")
+    st.image(uploaded_file.name)
 
     
     
