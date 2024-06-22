@@ -3,6 +3,8 @@ import pandas as pd
 import os
 import sys
 
+from tempfile import NamedTemporaryFile
+
 from classification_face_stop_sign_recognition import run_classification
 
 st.title('Bam\'s Stop Sign Detector')
@@ -13,8 +15,11 @@ if uploaded_file is not None:
     st.write("filename:", uploaded_file.name)
     st.image(bytes_data)
     # Ensure the src directory is in the path
-    
-    run_classification(input_image_path=uploaded_file.name, output_image_path=uploaded_file.name)
+    with open("input_file", "r") as f:
+        f.write(bytes_data)
+    with NamedTemporaryFile(dir='.', suffix='.jpeg') as f:
+        f.write(uploaded_file.getbuffer())
+        run_classification(input_image_path=uploaded_file.name, output_image_path=uploaded_file.name)
 
     st.image(uploaded_file.name)
 
