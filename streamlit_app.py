@@ -18,7 +18,7 @@ if uploaded_file is not None:
     with NamedTemporaryFile(dir='.', suffix='.jpeg') as f:
         f.write(uploaded_file.getbuffer())
         print(os.listdir('.'))
-        run_classification(input_image_path=uploaded_file.name, output_image_path=uploaded_file.name)
+        run_classification(input_image_path=f.name, output_image_path=uploaded_file.name)
 
     st.image(uploaded_file.name)
 
