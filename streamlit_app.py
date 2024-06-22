@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import os
 import sys
-sys.path.append('./src')
-from src.classification_face_stop_sign_recognition import run_classification
+
+from classification_face_stop_sign_recognition import run_classification
 
 st.title('Bam\'s Stop Sign Detector')
 
